@@ -1,0 +1,6 @@
+{
+  "query": "mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }",
+  "variables": {
+    "email": "#(email)"
+  }
+}

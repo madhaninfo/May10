@@ -1,0 +1,6 @@
+email,title,status
+madhanagopal.k@inforios.com,"1 Valid User Email ",200
+"         ",3 Blank Space,200
+alexhawkins.mt@@outloook.com,4 Invalid Email,200
+,5 Empty,200
+null,Null Value,200

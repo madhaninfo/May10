@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1.1:15]","start":1746860676153,"end":1746860691144,"title":"src\/test\/java\/examples\/ExistingEmail[1.1:15] 12:34:36.153-12:34:51.144 1 Valid User Email"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1.2:15]","start":1746860691159,"end":1746860732273,"title":"src\/test\/java\/examples\/ExistingEmail[1.2:15] 12:34:51.159-12:35:32.273 3 Blank Space"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1.3:15]","start":1746860732300,"end":1746860734934,"title":"src\/test\/java\/examples\/ExistingEmail[1.3:15] 12:35:32.300-12:35:34.934 4 Invalid Email"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1.4:15]","start":1746860734961,"end":1746860741570,"title":"src\/test\/java\/examples\/ExistingEmail[1.4:15] 12:35:34.961-12:35:41.570 5 Empty"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1.5:15]","start":1746860741604,"end":1746860749401,"title":"src\/test\/java\/examples\/ExistingEmail[1.5:15] 12:35:41.604-12:35:49.401 Null Value"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1.6:15]","start":1746860749445,"end":1746860750098,"title":"src\/test\/java\/examples\/ExistingEmail[1.6:15] 12:35:49.445-12:35:50.098","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,742 @@
+12:27:28.436 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:27:30.492 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:27:30.492 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:27:30.938 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+12:27:30.955 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:27:35.059 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 4100
+1 < 200
+1 < Date: Sat, 10 May 2025 06:57:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Cf-Ray: 93d78b149ea3c1f0-BLR
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1745960210&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ziKOdfiT%2BCgPQ1y0SaK2lreACnz2pcGq5X9ZO2gIUBU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1745960210&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ziKOdfiT%2BCgPQ1y0SaK2lreACnz2pcGq5X9ZO2gIUBU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1745960219
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < Age: 11744
+1 < Cf-Cache-Status: HIT
+1 < alt-svc: h3=":443"; ma=86400
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=149033&min_rtt=128895&rtt_var=88612&sent=6&recv=8&lost=0&retrans=1&sent_bytes=3444&recv_bytes=778&delivery_rate=14372&cwnd=252&unsent_bytes=0&cid=692632a8f3037a0e&ts=442&x=0"
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+12:27:35.094 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+2 > Accept-Encoding: gzip,deflate
+
+
+12:27:39.798 [pool-1-thread-1] ERROR com.intuit.karate - java.net.SocketException: Connection reset, http call failed after 4700 milliseconds for url: https://jsonplaceholder.typicode.com/users/1
+12:27:39.810 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/users.feature:15
+When method get
+http call failed after 4700 milliseconds for url: https://jsonplaceholder.typicode.com/users/1
+java.net.SocketException: Connection reset
+classpath:examples/users/users.feature:15
+12:27:44.325 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 13385
+1 < 201
+1 < Date: Sat, 10 May 2025 06:57:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < Cf-Ray: 93d78b4768ced97d-BLR
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746860264&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=0WO2fbaxOHQyCPn2MLYc%2FkISxqfRBRZ2sB7T99srWCo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746860264&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=0WO2fbaxOHQyCPn2MLYc%2FkISxqfRBRZ2sB7T99srWCo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1746860321
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < Cf-Cache-Status: DYNAMIC
+1 < alt-svc: h3=":443"; ma=86400
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=168997&min_rtt=129569&rtt_var=127446&sent=7&recv=6&lost=0&retrans=1&sent_bytes=3444&recv_bytes=1007&delivery_rate=9350&cwnd=252&unsent_bytes=0&cid=d5e5077dadaca96d&ts=11039&x=0"
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+12:27:44.332 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+12:27:45.305 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+12:30:29.178 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:30:29.196 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1746860429184
+12:30:31.522 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:31.522 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:31.522 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:31.528 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:31.523 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:32.059 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 206
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":"madhanagopal.k@inforios.com"}}
+
+12:30:32.067 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 179
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":""}}
+
+12:30:32.069 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":"         "}}
+
+12:30:32.056 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 207
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":"alexhawkins.mt@@outloook.com"}}
+
+12:30:32.069 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 183
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":"null"}}
+
+12:30:41.740 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 9654
+1 < 200
+1 < Date: Sat, 10 May 2025 07:00:42 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 169
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: ad35a484-2282-408b-b08b-29d62139ea0a
+1 < x-amzn-Remapped-content-length: 169
+1 < x-amz-apigw-id: KVvvmH91yQ0Ecyw=
+1 < X-Amzn-Trace-Id: Root=1-681ef996-6fada27c75b5113f602be6b0;Parent=4682042777d33eba;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Email is Missing", "developerMessage": "Email cannot be null or empty", "result": null}}}
+
+12:30:41.764 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": false,
+      "message": "Validation Error: Email is Missing",
+      "developerMessage": "Email cannot be null or empty",
+      "result": null
+    }
+  }
+}
+ 
+12:30:41.790 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:41.805 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 179
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":""}}
+
+12:30:42.046 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 9955
+1 < 200
+1 < Date: Sat, 10 May 2025 07:00:42 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 179
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: a64dee3f-b521-4ef3-b6b9-58d70e5e4b7c
+1 < x-amzn-Remapped-content-length: 179
+1 < x-amz-apigw-id: KVvvpHbIyQ0Ef3A=
+1 < X-Amzn-Trace-Id: Root=1-681ef996-2d30320c0068e01b0b96b157;Parent=7897011ec2cd5c56;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Invalid email format", "developerMessage": "Email must be a valid email address", "result": null}}}
+
+12:30:42.059 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": false,
+      "message": "Validation Error: Invalid email format",
+      "developerMessage": "Email must be a valid email address",
+      "result": null
+    }
+  }
+}
+ 
+12:30:42.489 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 10412
+1 < 200
+1 < Date: Sat, 10 May 2025 07:00:42 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 169
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: ce0c494e-dc8f-4879-b27e-e37776df09a3
+1 < x-amzn-Remapped-content-length: 169
+1 < x-amz-apigw-id: KVvvuEUoyQ0EUpQ=
+1 < X-Amzn-Trace-Id: Root=1-681ef997-54a60d757b1db0807541568a;Parent=7b5fe389ce65e9d1;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Email is Missing", "developerMessage": "Email cannot be null or empty", "result": null}}}
+
+12:30:42.499 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": false,
+      "message": "Validation Error: Email is Missing",
+      "developerMessage": "Email cannot be null or empty",
+      "result": null
+    }
+  }
+}
+ 
+12:30:42.953 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 10855
+1 < 200
+1 < Date: Sat, 10 May 2025 07:00:42 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 184
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 58ccb372-350b-454b-ae52-e9d0c4af572f
+1 < x-amzn-Remapped-content-length: 184
+1 < x-amz-apigw-id: KVvvvEU7SQ0EUpQ=
+1 < X-Amzn-Trace-Id: Root=1-681ef997-5b8d0d9971cde49503f45e57;Parent=4f38777ab42b10f7;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Email must be exactly 100 char", "developerMessage": "Email must be exactly 100 char", "result": null}}}
+
+12:30:42.985 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": false,
+      "message": "Validation Error: Email must be exactly 100 char",
+      "developerMessage": "Email must be exactly 100 char",
+      "result": null
+    }
+  }
+}
+ 
+12:30:43.277 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1468
+1 < 200
+1 < Date: Sat, 10 May 2025 07:00:43 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 169
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 10abe123-274b-4bd9-bb75-33d156bc5b72
+1 < x-amzn-Remapped-content-length: 169
+1 < x-amz-apigw-id: KVvwYEE1yQ0Ef5w=
+1 < X-Amzn-Trace-Id: Root=1-681ef99b-6317ec4763d026381567b22a;Parent=350b0e9dc6377367;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Email is Missing", "developerMessage": "Email cannot be null or empty", "result": null}}}
+
+12:30:43.353 [pool-1-thread-4] ERROR com.intuit.karate - src/test/java/examples/ExistingEmail.feature:10
+Then status 
+no step-definition method match found for: status 
+src/test/java/examples/ExistingEmail.feature:10
+12:30:46.598 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 14526
+1 < 200
+1 < Date: Sat, 10 May 2025 07:00:46 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 134
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: bfa47002-71d8-4a74-b3b1-0152f1cf1e90
+1 < x-amzn-Remapped-content-length: 134
+1 < x-amz-apigw-id: KVvvuGD9yQ0ECeA=
+1 < X-Amzn-Trace-Id: Root=1-681ef997-71f3888137a5dc59537f8d6b;Parent=5ec8b0b4a754c0a5;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": true, "message": "success", "developerMessage": null, "result": {"UserID": "67TRXGMC1X"}}}}
+
+12:30:46.629 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": true,
+      "message": "success",
+      "developerMessage": null,
+      "result": {
+        "UserID": "67TRXGMC1X"
+      }
+    }
+  }
+}
+ 
+12:30:47.868 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/ExistingEmail.feature
+12:34:33.955 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:34:33.971 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1746860673965
+12:34:36.201 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:36.530 [main] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 206
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":"madhanagopal.k@inforios.com"}}
+
+12:34:51.129 [main] DEBUG com.intuit.karate - response time in milliseconds: 14589
+1 < 200
+1 < Date: Sat, 10 May 2025 07:04:51 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 134
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: a33a15c9-4676-4a13-9f01-ac0e8b3aa14b
+1 < x-amzn-Remapped-content-length: 134
+1 < x-amz-apigw-id: KVwWhEsMyQ0EDAg=
+1 < X-Amzn-Trace-Id: Root=1-681efa8f-244119e5217db57f4aa4a46a;Parent=4055698b53112dbd;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": true, "message": "success", "developerMessage": null, "result": {"UserID": "67TRXGMC1X"}}}}
+
+12:34:51.143 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": true,
+      "message": "success",
+      "developerMessage": null,
+      "result": {
+        "UserID": "67TRXGMC1X"
+      }
+    }
+  }
+}
+ 
+12:34:51.164 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:51.173 [main] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":"         "}}
+
+12:35:32.270 [main] DEBUG com.intuit.karate - response time in milliseconds: 41096
+1 < 200
+1 < Date: Sat, 10 May 2025 07:05:32 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 169
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 799856c0-9982-4439-934e-15bf84dcc4a3
+1 < x-amzn-Remapped-content-length: 169
+1 < x-amz-apigw-id: KVwdiHDWyQ0ELJw=
+1 < X-Amzn-Trace-Id: Root=1-681efabc-2fdaed832f8378bf3a26fc89;Parent=2646b774ba47607c;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Email is Missing", "developerMessage": "Email cannot be null or empty", "result": null}}}
+
+12:35:32.273 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": false,
+      "message": "Validation Error: Email is Missing",
+      "developerMessage": "Email cannot be null or empty",
+      "result": null
+    }
+  }
+}
+ 
+12:35:32.301 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:35:32.315 [main] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 207
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":"alexhawkins.mt@@outloook.com"}}
+
+12:35:34.900 [main] DEBUG com.intuit.karate - response time in milliseconds: 2574
+1 < 200
+1 < Date: Sat, 10 May 2025 07:05:35 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 179
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 4810b5b3-cc5d-44c9-9020-dde094809e96
+1 < x-amzn-Remapped-content-length: 179
+1 < x-amz-apigw-id: KVwd8ExPSQ0ELgA=
+1 < X-Amzn-Trace-Id: Root=1-681efabf-424635d3520390a10fd98de0;Parent=48172c6aad8d0152;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Invalid email format", "developerMessage": "Email must be a valid email address", "result": null}}}
+
+12:35:34.931 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": false,
+      "message": "Validation Error: Invalid email format",
+      "developerMessage": "Email must be a valid email address",
+      "result": null
+    }
+  }
+}
+ 
+12:35:34.968 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:35:34.985 [main] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 179
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":""}}
+
+12:35:41.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 6565
+1 < 200
+1 < Date: Sat, 10 May 2025 07:05:41 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 169
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 0ddeeebb-0149-46a0-937c-ed1b77b950a9
+1 < x-amzn-Remapped-content-length: 169
+1 < x-amz-apigw-id: KVwe_GCTyQ0EPAw=
+1 < X-Amzn-Trace-Id: Root=1-681efac5-2f12688104e14ac04e1f0457;Parent=6e3c2a6a9fafbdb3;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Email is Missing", "developerMessage": "Email cannot be null or empty", "result": null}}}
+
+12:35:41.568 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": false,
+      "message": "Validation Error: Email is Missing",
+      "developerMessage": "Email cannot be null or empty",
+      "result": null
+    }
+  }
+}
+ 
+12:35:41.606 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:35:41.630 [main] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 183
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":"null"}}
+
+12:35:49.381 [main] DEBUG com.intuit.karate - response time in milliseconds: 7747
+1 < 200
+1 < Date: Sat, 10 May 2025 07:05:49 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 184
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: bf05cffa-5011-435b-85f8-c913c7a0bd5a
+1 < x-amzn-Remapped-content-length: 184
+1 < x-amz-apigw-id: KVwgNFubSQ0EeCg=
+1 < X-Amzn-Trace-Id: Root=1-681efacd-2bb8672a232840171da32b21;Parent=6777a3f2603c07b3;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Email must be exactly 100 char", "developerMessage": "Email must be exactly 100 char", "result": null}}}
+
+12:35:49.398 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "AdminEmailService": {
+      "success": false,
+      "message": "Validation Error: Email must be exactly 100 char",
+      "developerMessage": "Email must be exactly 100 char",
+      "result": null
+    }
+  }
+}
+ 
+12:35:49.448 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:35:49.475 [main] DEBUG com.intuit.karate - request:
+1 > POST https://sbadminv3.mzapi.mezzofy.com/business
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 179
+1 > Host: sbadminv3.mzapi.mezzofy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"query":"mutation AdminEmail($email: String!) { AdminEmailService(input: { Email: $email }) { success, message, developerMessage, result { UserID } } }","variables":{"email":""}}
+
+12:35:50.001 [main] DEBUG com.intuit.karate - response time in milliseconds: 513
+1 < 200
+1 < Date: Sat, 10 May 2025 07:05:50 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 169
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 0fa353fb-6c3f-4100-9535-5a7b1bb92626
+1 < x-amzn-Remapped-content-length: 169
+1 < x-amz-apigw-id: KVwgTEOoSQ0EAeA=
+1 < X-Amzn-Trace-Id: Root=1-681eface-5a10cc2b24dca40647dc674b;Parent=15ca7ef944bbd606;Sampled=0;Lineage=1:b59d95d3:0
+{"data": {"AdminEmailService": {"success": false, "message": "Validation Error: Email is Missing", "developerMessage": "Email cannot be null or empty", "result": null}}}
+
+12:35:50.074 [main] ERROR com.intuit.karate - src/test/java/examples/ExistingEmail.feature:10
+Then status 
+no step-definition method match found for: status 
+src/test/java/examples/ExistingEmail.feature:10
+12:35:51.418 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/ExistingEmail.feature
